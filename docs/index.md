@@ -30,7 +30,7 @@ def pickle_data_to_file(file_name, list_of_rows):
 When you open the binary file in a text editor, you can see that the content is obscured. 
 In Figure 2 you can see that the Expenses ‘Groceries’ and ‘Water’ are included, but you cannot easily read any other information.
 
-![Figure2](https://kdoehlertuw.github.io/IntroToProg-Python-Mod07/docs/Figure2.png "Figure 2")
+![Figure2](https://github.com/kdoehlertUW/IntroToProg-Python-Mod07/blob/main/docs/Figure2.png "Figure 2")
 
 **Figure 2. Pickled data opened in text editor**
 
