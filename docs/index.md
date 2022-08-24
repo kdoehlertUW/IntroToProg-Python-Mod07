@@ -1,7 +1,9 @@
 # Pickling and Error Handling 
+
 ## Introduction
 In module 7 we learned how to use pickling to save data to and load data from a binary file. We also learned how to use structured error handling to manage errors and provide more user-friendly error messages. 
 In this paper I am going to discuss how I created an Expense Tracking script that uses both pickling and error handling.
+
 ## Overview of the script
 The Expense Tracking script has a similar structure to the To Do List script from module 6, but instead of managing lists of dictionaries with a Task and Priority, 
 it manages lists of lists with an Expense Name and Amount. The script starts by loading data from a binary file, if one exists. The user is presented with a menu of options: 1. Add a new Expense 2. Remove an existing Expense 3. Save Data to File 4. Calculate total Expenses 5. Exit Program. 
@@ -27,7 +29,8 @@ def pickle_data_to_file(file_name, list_of_rows):
 
 When you open the binary file in a text editor, you can see that the content is obscured. 
 In Figure 2 you can see that the Expenses ‘Groceries’ and ‘Water’ are included, but you cannot easily read any other information.
-PLACEHOLDER FIGURE 2
+
+![Figure2](/docs/Figure2.png "Figure 2")
 
 **Figure 2. Pickled data opened in text editor**
 
@@ -66,7 +69,7 @@ def input_menu_choice():
 Figure 5 shows how this error looks when the script is run in Command Prompt. An incorrect value (8) is entered, the error message is printed, 
 and the script returns to the beginning of the loop where it prints the expenses and menu options. 
 
-PLACEHOLDER FIGURE 5
+![Figure5](/docs/Figure5.png "Figure 5")
 
 **Figure 5. Error handling when an incorrect menu selection [8] is made**
 
@@ -98,7 +101,7 @@ Figure 7 shows what this error handling looks like in the Command Prompt. A stri
 trying to convert it to float. The custom error message is printed, and the user has another opportunity to enter the Expense Name and Amount until a valid
 entry is made.
 
-PLACEHOLDER FIGURE 7
+![Figure7](/docs/Figure7.png "Figure 7")
 
 **Figure 7. Error handling when an incorrect value [Too high] is entered for amount**
 
@@ -128,7 +131,7 @@ def load_data_from_file(file_name, list_of_rows):
 
 Figure 9 shows the error message that is printed when the script is run but the binary file does not exist.
 
-PLACEHOLDER FIGURE 9
+![Figure9](/docs/Figure9.png "Figure 9")
 
 **Figure 9. Error message that is generated if there is no binary file to load from**
 
