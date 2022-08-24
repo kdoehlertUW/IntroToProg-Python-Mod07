@@ -69,7 +69,7 @@ def input_menu_choice():
 Figure 5 shows how this error looks when the script is run in Command Prompt. An incorrect value (8) is entered, the error message is printed, 
 and the script returns to the beginning of the loop where it prints the expenses and menu options. 
 
-![Figure5](/docs/Figure5.png "Figure 5")
+![Figure5](Figure5.png "Figure 5")
 
 **Figure 5. Error handling when an incorrect menu selection [8] is made**
 
@@ -101,7 +101,7 @@ Figure 7 shows what this error handling looks like in the Command Prompt. A stri
 trying to convert it to float. The custom error message is printed, and the user has another opportunity to enter the Expense Name and Amount until a valid
 entry is made.
 
-![Figure7](/docs/Figure7.png "Figure 7")
+![Figure7](Figure7.png "Figure 7")
 
 **Figure 7. Error handling when an incorrect value [Too high] is entered for amount**
 
@@ -131,7 +131,7 @@ def load_data_from_file(file_name, list_of_rows):
 
 Figure 9 shows the error message that is printed when the script is run but the binary file does not exist.
 
-![Figure9](/docs/Figure9.png "Figure 9")
+![Figure9](Figure9.png "Figure 9")
 
 **Figure 9. Error message that is generated if there is no binary file to load from**
 
